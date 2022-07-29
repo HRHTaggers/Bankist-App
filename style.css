@@ -965,8 +965,31 @@ h4 {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  height: 8%;
   background-color: white;
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.btn__return-website {
+  display: flex;
+  margin: 0 1.5rem 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.btn__return-website--link:link,
+.btn__return-website--link:visited {
+  color: #333333;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.btn__return-website:hover {
+  transform:translateY(1px);
+  background-image: linear-gradient(to top left, #3cb587, #97de59);
 }
