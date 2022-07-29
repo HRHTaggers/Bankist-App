@@ -36,12 +36,32 @@ const message = document.createElement(`div`);
 
 message.classList.add(`cookie-message`);
 message.innerHTML = `We use cookies for improved functionality & analytics. <button class="btn btn--close-cookie">Got it!</button>`;
-header.append(message);
+header.prepend(message);
 document
-  .querySelector(`btn--close-cookie`)
+  .querySelector(`.btn--close-cookie`)
   .addEventListener("click", function () {
-    message.parentElement.removeChild(message);
+    message.remove();
   });
 
 message.style.backgroundColor = `#5ec576`;
+message.style.color = `white`;
 message.style.width = `120%`;
+
+const btnScrollto = document.querySelector(`.btn--scroll-to`);
+const section1 = document.querySelector(`#section--1`);
+
+//SCROLL BEHAVIOUR
+btnScrollto.addEventListener(`click`, function() {
+
+    /*const s1coords = section1.getBoundingClientRect();
+
+    window.scrollTo({
+        left: s1coords.left + window.pageXOffset,
+        top: s1coords.top + window.pageYOffset,
+        behavior: `smooth`
+    });
+    */
+
+    section1.scrollIntoView( {behavior: `smooth`} );
+});
+

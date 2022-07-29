@@ -972,6 +972,15 @@ h4 {
   font-weight: 400;
 }
 
+.btn--close-cookie {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.btn--close-cookie:hover {
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
 .btn__return-website {
   display: flex;
   margin: 0 1.5rem 1rem;
