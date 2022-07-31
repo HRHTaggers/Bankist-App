@@ -67,7 +67,7 @@ document.querySelector(`.nav__links`).addEventListener(`click`, function(event) 
 //COOKIE MESSAGE
 message.classList.add(`cookie-message`);
 message.innerHTML = `We use cookies for improved functionality & analytics. <button class="btn btn--close-cookie">Got it!</button>`;
-header.prepend(message);
+header.append(message);
 document
   .querySelector(`.btn--close-cookie`)
   .addEventListener("click", function () {

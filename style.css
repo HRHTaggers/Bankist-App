@@ -821,6 +821,10 @@ h4 {
   margin-bottom: 4rem;
 }
 
+.section--login {
+  text-align: center;
+}
+
 /* SIGNUP */
 .section--sign-up {
   background-color: #37383d;
@@ -979,4 +983,10 @@ h4 {
 
 .btn--close-cookie:hover {
   background-color: rgba(255, 255, 255, 0.87);
+}
+
+.nav__link--connector:link,
+.nav__link--connector:visited {
+  text-decoration: none;
+  color:#222;
 }
