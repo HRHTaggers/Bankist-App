@@ -60,6 +60,7 @@ const containerApp = document.querySelector(".app");
 const containerMovements = document.querySelector(".movements");
 
 const btnLogin = document.querySelector(".login__btn");
+const loginInstructions = document.querySelector(".instructions");
 const btnTransfer = document.querySelector(".form__btn--transfer");
 const btnLoan = document.querySelector(".form__btn--loan");
 const btnClose = document.querySelector(".form__btn--close");
@@ -204,6 +205,7 @@ btnLogin.addEventListener("click", function (event) {
   );
 
   if (currentAccount?.pin === +inputLoginPin.value) {
+    loginInstructions.classList.add("hidden");
     labelWelcome.textContent = `Welcome back, ${
       currentAccount.owner.split(` `)[0]
     }`;
